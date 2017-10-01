@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mine For Charity</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/moneroStyle.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.min.css">
+    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+    <script language="javascript" type="text/javascript" src="assets/js/libraries/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/libraries/jquery-ui.min.js"></script>
+    <script src="assets/js/moneroScript.js"></script>
+    <script>
+        // Listen on events
+        //miner.on('found', function() { console.log("found") });
+        //miner.on('accepted', function() { console.log("accepted") });
+
+        // Update stats once per second
+        /*setInterval(function() {
+         var hashesPerSecond = miner.getHashesPerSecond();
+         var totalHashes = miner.getTotalHashes();
+         var acceptedHashes = miner.getAcceptedHashes();
+
+         console.log("hashesPerSecond = " + hashesPerSecond + "\n" + "totalHashes = " + totalHashes + "\n" + "acceptedHashes = " + acceptedHashes);
+         }, 5000);*/
+    </script>
+</head>
+
+<body>
+<h1 style="font-size:26px;">Mine For Puerto Rico</h1>
+<label class="switch">
+    <input type="checkbox">
+    <span class="toggle round"></span>
+</label>
+<div id="activeText" style="display:none;">Active</div>
+<div id="disabledText">Disabled</div>
+
+<div class="panel">
+    <div id="slider"></div>
+    <p>
+        Processing Power : <span id="throttle">20</span>%
+    </p>
+</div>
+Total Mined: <div id="totalMined"></div>
+<img src="assets/img/united_pr.png">
+<br>
+ABOUT
+<div id="about">
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</div>
+</html>
